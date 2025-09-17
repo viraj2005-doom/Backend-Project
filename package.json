@@ -1,7 +1,10 @@
 {
   "dependencies": {
     "bootstrap": "^5.3.8",
-    "lodash": "^4.17.21"
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.18.1"
   },
   "name": "backend1",
   "version": "1.0.0",

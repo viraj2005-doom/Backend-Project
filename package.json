@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "lodash": "^4.17.21"
+  },
+  "name": "backend1",
+  "version": "1.0.0",
+  "description": "the version 1 of the backend",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "backend"
+  ],
+  "author": "viraj solanki",
+  "license": "ISC"
+}

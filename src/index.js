@@ -30,4 +30,16 @@ import connectDB from "./db/index.js";
 
 //second professional approach is to create a separate file for database connection
 
-connectDB(); // calling the function to connect the database
+
+
+
+connectDB()
+.then(() => {
+    app.listen(process.env.PORT || 8000, () => {
+        console.log(`server is running at port ${process.env.PORT || 8000}`);
+    })
+})
+.catch((err) => {
+    console.log("Error in connecting to database", err);
+    
+}); // calling the function to connect the database

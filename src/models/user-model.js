@@ -98,3 +98,18 @@ userSchema.methods.generateRefreshToken = function(){
 }
 
 export const User = mongoose.model('User',userSchema)
+
+
+//"json web token(JWT)" su che?
+//je ek compact, url-safe means che je json object ne represent kare che
+//je digitally signed hoy che using a secret key
+//je user authentication ane information exchange mate use thay che
+//je user ne authenticate kare che without server side session store karva ni jarur pade
+
+// How it works (simplified)
+// 1. User logs in with username/password.
+// 2. Server verifies credentials.
+// 3. Server creates a JWT with some user info and a secret key, and sends it back.
+// 4. User stores the JWT (usually in localStorage, sessionStorage, or cookies).
+// 5. On future requests, the user sends this token in the header (Authorization: Bearer <token>).
+// 6. Server checks the token’s signature using the secret key. If valid → user is authenticated.
